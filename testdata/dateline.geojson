@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "dateline-region",
+      "properties": { "name": "crosses-antimeridian" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [[170, 0], [-170, 0], [-170, 10], [170, 10], [170, 0]],
+          [[172, 2], [176, 2], [176, 8], [172, 8], [172, 2]]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "multi-region",
+      "properties": {},
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[[0, 0], [10, 0], [10, 10], [0, 10], [0, 0]]],
+          [[[20, 20], [30, 20], [30, 30], [20, 30], [20, 20]]]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "edge-toucher",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [[25, 20], [35, 20], [35, 30], [25, 30], [25, 20]]
+        ]
+      }
+    }
+  ]
+}
